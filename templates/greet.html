@@ -1,0 +1,13 @@
+Hi, {{ person }}! 
+
+{% if compliment != "--select--compliment" and diss != "--select--diss"%}
+I think you're {{ compliment }} and {{ diss }}!
+
+
+{% elif compliment != "--select--compliment" %}
+I think you're {{ compliment }}!
+
+{% elif diss != "--select--diss" %}
+I think you're {{ diss }}!
+
+{% endif %}
